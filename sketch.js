@@ -94,6 +94,8 @@ function mouseReleased(){
 
 function keyPressed(){
     if(keyCode === 32){
+        bird.trajectory = [];
+        Matter.Body.setPosition(bird.body,{x:200,y:100});
        slingshot.attach(bird.body);
     }
 }
